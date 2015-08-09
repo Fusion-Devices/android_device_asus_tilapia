@@ -1,7 +1,7 @@
 [
     {
       "repository": "android_kernel_asus_grouper",
-      "target_path": "kernel/asus/grouper"
+      "target_path": "device/asus/grouper-kernel"
     },
     {
       "repository": "android_device_asus_grouper",

@@ -5,21 +5,21 @@ PRODUCT_RELEASE_NAME := Nexus7-GSM
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common Fusiom stuff.
+$(call inherit-product, vendor/fusiom/config/common_tablet.mk)
 
 # Inherit telephony common stuff
-$(call inherit-product, vendor/cm/config/telephony.mk)
+$(call inherit-product, vendor/fusion/config/telephony.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/fusion/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/tilapia/full_tilapia.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tilapia
-PRODUCT_NAME := cm_tilapia
+PRODUCT_NAME := tilapia
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := Asus
